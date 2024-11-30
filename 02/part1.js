@@ -19,6 +19,8 @@ console.log(arr);
 //slpice manipulates original array i.e arr.splice(1,3) it will remove value from 1 to 3 ne arr will be [0,4,5]
 
 
+
+
 /**            part 2 arrays                      */
 
 const indHero=["SRK","SAK","SK","AK"];
@@ -35,6 +37,8 @@ console.log(allHero);
 
 console.log(Array.isArray("Abhi")); //false
 console.log(Array.from("Abhi")); //[ 'A', 'b', 'h', 'i' ]
+
+
 
 
 /**       objects        */
@@ -55,6 +59,9 @@ user.greetings=function(){
     console.log(`hello ${user.name}`);
 }
 console.log(user.greetings());
+
+
+
 
 /**         object singleton      */
 //const tinderUser = new Object()  //singleton object
