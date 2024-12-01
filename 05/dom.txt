@@ -1,0 +1,33 @@
+                 window
+                   |
+                document
+                   |
+                  HtML
+                /      \
+           HEAD        BODY
+          /    \      /     \
+      META    TITLE  (as we wite code here example first div then h1 etc etc)
+
+
+// DOM
+
+document.getElementById
+document.innerHTML
+getElementByClassName
+innerText
+textContext       //document.textContext
+querrySelector()  // suppose document.querrySelector("h1") it will give first h1 to us
+querrySelectorAll("#geading)  // suppose document.querrySelector("h1") it will give all heading to us
+<ul>
+   <li>one<li>
+   <li>two<li>
+   <li>three<li>
+<ul>   
+
+const  myUl=document.querrySelector("ul);
+myUl.querrySelector("li");
+const turnColor=myUl.querrySelector("li");
+turnColor.style.backgroundColr="green"
+turnColor.innerHtml      //one
+turnColor.innerHTML="fuve"   //five
+Array.from()   // if we want to convert anything in array we used Array.from

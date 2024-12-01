@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning</title>
+</head>
+<body>
+    <h1>Learning Dom </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, numquam voluptatibus voluptas voluptatum placeat eius provident saepe ipsum ab tempore dicta beatae modi inventore accusantium molestiae enim obcaecati! Exercitationem, officia.</p>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
+    </div>
+    <ul class="ul">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    const parent=document.querySelector(".parent");
+    console.log(parent);
+    console.log(parent.children);
+
+    for(let i=0;i<parent.children.length;i++){
+        console.log(parent.children[i].innerHTML)
+    }
+    parent.children[1].style.color="orange"
+    console.log(parent.firstElementChild);
+    console.log("NODES", parent.childNodes);
+
+    const cteate =document.createElement("div");
+    console.log(cteate);
+    cteate.className="name";
+    cteate.id="first";
+    cteate.setAttribute("title","open practise");
+    cteate.style.color="pink";
+    cteate.innerHTML="abhi";
+
+    //appendChild
+    document.body.appendChild(cteate);
+    const create=((lang)=>{
+        const add=document.createElement("li");
+    add.innerHTML=`${lang}`;
+    const inside=document.querySelector("ul");
+    inside.appendChild(add);
+    })
+    create("python")
+    create("java")
+    create("c++")
+
+
+    //edit
+    const curr = document.querySelector("li:nth-child(2)");
+
+    // in simple we can curr.innerHTML=rails
+    const newLi=document.createElement("li");
+    newLi.innerHTML="rails";
+    curr.replaceWith(newLi);
+
+
+    //remove
+   
+    //const re = document.getElementsByClassName("ul");
+    //re[0].remove();
+
+    const re=document.querySelector("li:last-child");
+    re.remove();
+
+
+</script>
+</html>

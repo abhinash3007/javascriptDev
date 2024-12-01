@@ -1,0 +1,23 @@
+.head {
+    text-align: center;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+    height: 20px;
+    font-size: 16px;
+  }
+  
+  .cal {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cal:hover {
+    background-color: #3e8e41;
+  }
+  
